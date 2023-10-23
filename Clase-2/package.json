@@ -1,0 +1,20 @@
+{
+  "name": "clase-2",
+  "version": "1.0.0",
+  "description": "¿Qué es HTTP?",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon 1.http.mjs",
+    "dev2": "nodemon 2.routing.mjs",
+    "dev3": "node --watch 3.express.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "express": "4.18.2"
+  }
+}
