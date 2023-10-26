@@ -4,10 +4,10 @@ GET http://localhost:1234/movies
 
 
 ### recuperar una película por ID
-GET http://localhost:1234/movies/9e6106f0-848b-4810-a11a-3d832a5610f9
+GET http://localhost:1234/movies/359f9683-6cf4-11ee-8b5e-d8bbc17276e3
 
 ### recuperar una película por género
-GET http://localhost:1234/movies?genre=Action
+GET http://localhost:1234/movies?genre=Crime
 
 
 ### crear prlícula con POST
@@ -15,22 +15,25 @@ POST http://localhost:1234/movies
 Content-Type: application/json
 
 {
-    "title": "The Shawshank Redemption 2",
-    "year": 1998,
-    "director": "Frank Darabont",
-    "duration": 142,
-    "poster": "https://i.ebayimg.com/images/g/4goAAOSwMyBe7hnQ/s-l1200.webp",
+    "title": "Interestellar",
+    "year": 1994,
+    "director": "Christopher Nolan",
+    "duration": 180,
+    "poster": "https://m.media-amazon.com/images/I/91obuWzA3XL._AC_UF1000,1000_QL80_.jpg",
     "genre": [
-      "Drama"
+      "Adventure", "Drama", "Sci-Fi"
     ],
-    "rate": 3
+    "rate": 8.8
 }
 
 ### Actualziar película
-PATCH http://localhost:1234/movies/9e6106f0-848b-4810-a11a-3d832a5610f9
+PATCH http://localhost:1234/movies/359f9683-6cf4-11ee-8b5e-d8bbc17276e3
 Content-Type: application/json
 
 {
-  "year":1994
+  "title": "Interestellar",
+  "year":2004
 }
- 
+
+### Eliminar película
+DELETE  http://localhost:1234/movies/084c4fe6-7276-11ee-83b8-d8bbc17276e3
